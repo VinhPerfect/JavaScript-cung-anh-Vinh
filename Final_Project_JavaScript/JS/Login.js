@@ -40,9 +40,11 @@ function Login_User(event){
         return;
     }
   // 
-  const user = JSON.parse(localStorage.getItem('user'));
+  const users = JSON.parse(localStorage.getItem('users')) || [];
   // 
-  if (user && user.email === email && user.matkhau === matkhau) {
+  const user = users.find(u => u.email === email && u.matkhau === matkhau);
+  // 
+  if (user) {
       alert('Đăng nhập thành công');
       transitionToPage('home.html');
   } else {

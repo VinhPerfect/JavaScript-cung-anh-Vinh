@@ -50,7 +50,17 @@ function SignUp_User(event){
         matkhau: matkhau
     };
     // 
-    localStorage.setItem('user', JSON.stringify(user));
+    let users = JSON.parse(localStorage.getItem('users')) || [];
+    // 
+    const existingUser = users.find(u => u.email === email);
+    if (existingUser) {
+        alert('Email đã tồn tại');
+        return;
+    }
+    // 
+    users.push(user);
+    // 
+    localStorage.setItem('users', JSON.stringify(users));
     // 
     alert('Đăng ký thành công');
     transitionToPage('Login.html');
