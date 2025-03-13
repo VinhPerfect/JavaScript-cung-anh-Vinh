@@ -14,7 +14,7 @@ function hienThiSanPham() {
                     <img src="${sanPham.hinhAnh}" class="card-img-top" alt="${sanPham.ten}">
                     <div class="card-body text-center">
                         <h5 class="card-title">${sanPham.ten}</h5>
-                        <p class="card-text">${sanPham.gia}đ</p>
+                        <p class="card-text">${sanPham.gia} đ</p>
                         <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="${viTri}" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>
                     </div>
                 </div>

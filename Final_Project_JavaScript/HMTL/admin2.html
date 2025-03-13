@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/admin2.css">
+    <title>Quản lý sản phẩm</title>
+</head>
+<body>
+    <div id="body">
+        <div class="menu-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-2 menu-bar-right">
+                        <h3>Quản lý</h3>
+                            <ul>
+                                <li><a href="home.html" target="_blank" class="text-decoration-none">Trang chủ</a></li>
+                                <li onclick="showSection('sanpham')">Sản phẩm</li>
+                                <li>Thông tin khách hàng</li>
+                                <li>Thông tin nhân viên</li>
+                            </ul>
+                    </div>
+                    <!-- col-2 -->
+                    <!-- col-8 -->
+                    <div class="col content">
+                        <div id="sanpham" class="section">
+                            <h3>Quản lý Sản phẩm</h3>
+                            <div class="container mt-5">
+                                <h2 class="mb-4 text-center">Quản lý sản phẩm</h2>
+                                <div class="mb-4">
+                                    <input type="text" id="tenSanPham" class="form-control mb-2" placeholder="Tên sản phẩm">
+                                    <input type="number" id="giaSanPham" class="form-control mb-2" placeholder="Giá sản phẩm">
+                                    <input type="file" id="hinhAnhSanPham" class="form-control mb-2">
+                                    <button class="btn btn-primary" onclick="themSanPham()">Thêm sản phẩm</button>
+                                </div>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Mã sản phẩm</th>
+                                            <th>Hình ảnh</th>
+                                            <th>Tên Sản phẩm</th>
+                                            <th>Giá</th>
+                                            <th>Ghi chú</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="bangSanPham">              
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal fade" id="suaModal" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Chỉnh sửa sản phẩm</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <input type="text" id="suaTenSanPham" class="form-control mb-2" placeholder="Tên sản phẩm">
+                                            <input type="number" id="suaGiaSanPham" class="form-control mb-2" placeholder="Giá sản phẩm">
+                                            <input type="file" id="suaHinhAnhSanPham" class="form-control mb-2">
+                                            <img id="xemTruocHinhAnh" class="img-fluid" style="max-height: 200px; display: none;">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                                            <button type="button" class="btn btn-primary" id="luuChinhSua">Lưu</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- san pham -->
+                    </div>
+                <!-- row -->                
+                 </div>
+            </div>
+        </div>
+        <!-- menu bar -->
+    </div>
+    <!-- js -->
+    <script src="../JS/admin2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
