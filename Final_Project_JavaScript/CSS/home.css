@@ -108,3 +108,7 @@ body {
     transform: rotateX(-90deg);
     opacity: 0;
 }
+/*  */
+.content1 p{
+    line-height: 2;
+}

@@ -26,7 +26,7 @@ function Login_form(event){
     window.location.href = "Login.html";
 }
 // 
-function SignUp_User(event){
+function SignUp_User(event){    
     event.preventDefault();
     // 
     const hovaten = document.getElementById('hovaten').value;
@@ -44,13 +44,12 @@ function SignUp_User(event){
         return;
     }
     // 
+    let users = JSON.parse(localStorage.getItem('users')) || [];
     const user = {
         hovaten: hovaten,
         email: email,
         matkhau: matkhau
     };
-    // 
-    let users = JSON.parse(localStorage.getItem('users')) || [];
     // 
     const existingUser = users.find(u => u.email === email);
     if (existingUser) {
@@ -59,9 +58,7 @@ function SignUp_User(event){
     }
     // 
     users.push(user);
-    // 
     localStorage.setItem('users', JSON.stringify(users));
-    // 
     alert('Đăng ký thành công');
     transitionToPage('Login.html');
 }
