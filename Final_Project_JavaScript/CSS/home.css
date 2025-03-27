@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+.img-size {
+    height: 150px;
+    object-fit: cover;
+}
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -111,4 +114,52 @@ body {
 /*  */
 .content1 p{
     line-height: 2;
+}
+.content-about2 h3{
+    position: relative;
+    padding-left: 8px;
+}
+.content-about2 h3::before{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #E57905;
+    display: inline-block;
+    position: absolute;
+    left: -10px;
+    bottom: 18px;
+    transform: rotate(90deg);
+}
+.content-about2 a:hover h5 {
+    color: #EA8025;
+}
+.content-about2 .img-zoom {
+    overflow: hidden; 
+    display: inline-block;
+    border-radius: 20px;
+    height: 250px;
+}
+.content-about2 .img-zoom img {
+    transition: transform 0.3s ease-in-out;
+    border-radius: inherit;
+    height: 100%;
+}
+.content-about2 .img-zoom:hover img {
+    transform: scale(1.1); 
+}
+.content-about2 .title-link {
+    text-decoration: none;
+    color: black;
+}
+.content-about2 .title-link:hover {
+    color: #EA8025; 
+}
+/*  */
+#footer a {
+    text-decoration: none;
+    color: white;
+}
+#footer .page {
+    background-image: url(../IMG/bg-footer.png);
+    background-size: cover;
 }

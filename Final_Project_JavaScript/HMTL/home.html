@@ -33,7 +33,7 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Menu</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Nước ép</a></li>
+                  <li><a class="dropdown-item" href="#">Cà phê</a></li>
                   <li><a class="dropdown-item" href="#">Trà</a></li>
                   <li><a class="dropdown-item" href="#">Soda</a></li>
                   <li><hr class="dropdown-divider"/></li>
@@ -55,9 +55,9 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tài khoản</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Đơn mua</a></li>
-                <li><a class="dropdown-item" href="#">Thông tin tài khoản</a></li>
-                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>                 
+                <li><a class="dropdown-item" href="../HMTL/cart.html">Đơn mua</a></li>
+                <li><a class="dropdown-item" href="#">Thông tin tài khoản</a></li> 
+                <li><a class="dropdown-item" href="../HMTL/Login.html">Đăng nhập</a></li>               
               </ul>
             </li>
           </ul>   
@@ -107,7 +107,6 @@
               <div class="mb-3">
                 <label for="chonSize" class="form-label">Chọn Size</label>
                 <select class="form-select" id="chonSize">
-                  <option value="S">Size S</option>
                   <option value="M" selected>Size M</option>
                   <option value="L">Size L</option>
                 </select>
@@ -116,17 +115,20 @@
                 <label for="chonSoLuong" class="form-label">Số lượng</label>
                 <input type="number" class="form-control" id="chonSoLuong" value="1" min="1">
               </div>
+              <div class="">
+                <h6 class="">Đơn giá: <span id="giaSanPham"></span> đ</h6>
+              </div>
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
-            <button type="button" class="btn custom-btn btn-12" id="xacNhanDatHang"><span>Mua ngay</span><span>Xác nhận</span></button>
+            <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">Hủy</button>
+            <button type="button" class="btn custom-btn btn-12 text-white" id="xacNhanDatHang"><span>Mua ngay</span><span>Xác nhận</span></button>
           </div>
         </div>
       </div>
     </div>
     <!--  -->
-    <div class="about1">
+    <div class="about1 mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -134,7 +136,7 @@
                 </div>
                 <div class="col-6 text-center mx-auto w-80">
                     <img src="../IMG/img9.png" alt="">
-                    <div class="content1 mt-5" style="font-size: 18px; text-align: justify;">
+                    <div class="content1 mt-2" style="font-size: 18px; text-align: justify;">
                         <p>Được trồng trọt và chăm chút kỹ lưỡng, nuôi dưỡng từ thổ nhưỡng phì nhiêu,
                         nguồn nước mát lành, bao bọc bởi mây và sương cùng nền nhiệt độ mát mẻ
                         quanh năm, những búp trà ở Tây Bắc mập mạp và xanh mướt, hội tụ đầy đủ
@@ -142,18 +144,192 @@
                         phương pháp canh tác của đồng bào dân tộc nơi đây đã tạo ra Trà Xanh vị
                         mộc dễ uống, dễ yêu, không thể trộn lẫn với bất kỳ vùng miền nào khác.</p>
                     </div>
-                    
+                    <a style="background: #778B37;" class="btn text-white w-100 fw-bold" href="#" role="button">Thử ngay</a>
+                    <img style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); border-radius: 20px; object-fit: cover;" src="../IMG/img12.png" class="w-100 mt-3" alt="">
                 </div>
             </div>
         </div>
     </div>
     <!--  -->
-    <div class="about2">
+    <div class="about2 mt-5" style="background-color: #FFF7E6;">
         <div class="container">
-            <h3>Chuyện nhà</h3>
+            <h3 class="text-center"><img style="" src="../IMG/img11.png" alt=""> Chuyện nhà</h3>
+            <div class="content-about2">
+              <h3><a href="#" class="title-link">Coffeeholic</a></h3>
+                <div class="row mt-5">
+                    <div class="col-4">
+                        <div class="img-zoom">
+                          <a href="#"><img style="height: 100%;" class="w-100" src="../IMG/img13.png" alt=""></a>
+                        </div>
+                        <h6 style="opacity: 0.5; padding-left: 1rem; padding-top: 1rem;">01/11/2023</h6>
+                        <a href="#" class="text-decoration-none text-dark">
+                          <h5 class="fw-bold" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-left: 1rem; padding-top: 0.5rem;">
+                            BẮT GẶP SÀI GÒN XƯA TRONG MÓN UỐNG HIỆN ĐẠI CỦA GIỚI TRẺ
+                          </h5> 
+                        </a>
+                        <p style="padding-left: 1rem;">Dẫu qua bao nhiêu lớp sóng thời gian, người ta vẫn có thể tìm lại những dấu ấn thăng trầm của một Sài Gòn xưa cũ. Trên những góc phố,...</p>
+                    </div>
+                    <!-- col-4 -->       
+                    <div class="col-4">
+                      <div class="img-zoom">
+                        <a class="" href="#"><img class="w-100" src="../IMG/img14.png" alt=""></a>
+                      </div>
+                      <h6 style="opacity: 0.5; padding-left: 1rem; padding-top: 1rem;">01/11/2023</h6>
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h5 class="fw-bold" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-left: 1rem; padding-top: 0.5rem;">
+                          CHỈ CHỌN CÀ PHÊ MỖI SÁNG NHƯNG CŨNG KHIẾN CUỘC SỐNG CỦA BẠN THÊM THÚ VỊ, TẠI SAO KHÔNG?
+                        </h5> 
+                      </a>
+                      <p style="padding-left: 1rem;">Thực chất, bạn không nhất thiết phải làm gì to tát để tạo nên một ngày rực rỡ. 
+                        Chỉ cần bắt đầu từ những việc nhỏ nhặt nhất, khi bạn...</p>
+                  </div>
+                  <!-- col-4 -->     
+                  <div class="col-4">
+                    <div class="img-zoom">
+                      <a href="#"><img class="w-100" src="../IMG/img15.png" alt=""></a>
+                    </div>
+                    <h6 style="opacity: 0.5; padding-left: 1rem; padding-top: 1rem;">01/11/2023</h6>
+                    <a href="#" class="text-decoration-none text-dark">
+                      <h5 class="fw-bold" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-left: 1rem; padding-top: 0.5rem;">
+                        SIGNATURE - BIỂU TƯỢNG VĂN HOÁ CÀ PHÊ CỦA THE COFFEE HOUSE ĐÃ QUAY TRỞ LẠI
+                      </h5> 
+                    </a>
+                    <p style="padding-left: 1rem;">Mới đây, các "tín đồ" cà phê đang bàn tán xôn xao về SIGNATURE - Biểu tượng văn hóa cà phê của The Coffee House đã quay trở lại.Một lời...</p>
+                </div>
+                <!-- col-4 -->                                             
+                </div>
+                <!-- row -->
+                <h3 class="mt-5"><a href="#" class="title-link">Teaholic</a></h3>
+                <div class="row mt-5">
+                    <div class="col-4">
+                        <div class="img-zoom">
+                          <a href="#"><img class="w-100" src="../IMG/img16.png" alt=""></a>
+                        </div>
+                        <h6 style="opacity: 0.5; padding-left: 1rem; padding-top: 1rem;">01/11/2023</h6>
+                        <a href="#" class="text-decoration-none text-dark">
+                          <h5 class="fw-bold" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-left: 1rem; padding-top: 0.5rem;">
+                            TRUNG THU NÀY, SAO BẠN KHÔNG TỰ CHO MÌNH "DỪNG MỘT CHÚT THÔI, THƯỞNG MỘT CHÚT TRÔI"?
+                          </h5> 
+                        </a>
+                        <p style="padding-left: 1rem;">Bạn có từng nghe: “Trung thu thôi mà, có gì đâu mà chơi”, hay “Trung thu càng ngày càng chán”...? Sự bận rộn đến mức “điên rồ” đã khiến chúng...</p>
+                    </div>
+                    <!-- col-4 -->       
+                    <div class="col-4">
+                      <div class="img-zoom">
+                        <a href="#"><img class="w-100" src="../IMG/img17.png" alt=""></a>
+                      </div>
+                      <h6 style="opacity: 0.5; padding-left: 1rem; padding-top: 1rem;">01/11/2023</h6>
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h5 class="fw-bold" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-left: 1rem; padding-top: 0.5rem;">
+                          BỘ SƯU TẬP CẦU TOÀN KÈO THƠM: "VÍA" MAY MẮN KHÔNG THỂ BỎ LỠ TẾT NÀY
+                        </h5> 
+                      </a>
+                      <p style="padding-left: 1rem;">Tết nay vẫn giống Tết xưa, không hề mai một nét văn hoá truyền thống mà còn thêm vào những hoạt động “xin vía” hiện đại, trẻ trung. Ví như...</p>
+                  </div>
+                  <!-- col-4 -->     
+                  <div class="col-4">
+                    <div class="img-zoom">  
+                      <a href="#"><img class="w-100" src="../IMG/img18.png" alt=""></a>
+                    </div>
+                    <h6 style="opacity: 0.5; padding-left: 1rem; padding-top: 1rem;">01/11/2023</h6>
+                    <a href="#" class="text-decoration-none text-dark">
+                      <h5 class="fw-bold" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-left: 1rem; padding-top: 0.5rem;">
+                        “KHUẤY ĐỂ THẤY TRĂNG" - KHUẤY LÊN NIỀM HẠNH PHÚC: TRẢI NGHIỆM KHÔNG THỂ BỎ LỠ MÙA TRUNG THU NÀY
+                      </h5> 
+                    </a>
+                    <p style="padding-left: 1rem;">Năm 2022 là năm đề cao sức khỏe tinh thần nên giới trẻ muốn tận hưởng một Trung thu với nhiều trải nghiệm mới mẻ, rôm rả cùng bạn bè...</p>
+                </div>
+                <!-- col-4 -->                                             
+                </div>
+                <!-- row -->
+                <h3 class="mt-5"><a href="#" class="title-link">Blog</a></h3>
+                <div class="row mt-5">
+                    <div class="col-4">
+                        <div class="img-zoom">
+                          <a href="#"><img class="w-100" src="../IMG/img19.png" alt=""></a>
+                        </div>
+                        <h6 style="opacity: 0.5; padding-left: 1rem; padding-top: 1rem;">01/11/2023</h6>
+                        <a href="#" class="text-decoration-none text-dark">
+                          <h5 class="fw-bold" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-left: 1rem; padding-top: 0.5rem;">
+                            THE COFFEE HOUSE PHẢN HỒI VỀ SỰ CỐ VỠ KÍNH DO GIÔNG LỐC TẠI CỬA HÀNG THE COFFEE HOUSE THÁI HÀ, HÀ NỘI
+                          </h5> 
+                        </a>
+                        <p style="padding-left: 1rem;">Vào tối ngày 20 tháng 04 năm 2024, Hà Nội có xuất hiện giông lốc kèm mưa đá, gây vỡ kính tại toà nhà Việt Tower - 01 Thái Hà,...</p>
+                    </div>
+                    <!-- col-4 -->       
+                    <div class="col-4">
+                      <div class="img-zoom">
+                        <a href="#"><img class="w-100" src="../IMG/img20.png" alt=""></a>
+                      </div>
+                      <h6 style="opacity: 0.5; padding-left: 1rem; padding-top: 1rem;">01/11/2023</h6>
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h5 class="fw-bold" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-left: 1rem; padding-top: 0.5rem;">
+                          “XUÂN LÊN ĐI!”: LỜI CHÚC Ý NGHĨA CHO NĂM THÌN ĐIỀU CHI CŨNG NHƯ Ý
+                        </h5> 
+                      </a>
+                      <p style="padding-left: 1rem;">Dẫu qua bao nhiêu lớp sóng thời gian, người ta vẫn có thể tìm lại những dấu ấn thăng trầm của một Sài Gòn xưa cũ. Trên những góc phố,....</p>
+                  </div>
+                  <!-- col-4 -->     
+                  <div class="col-4">
+                    <div class="img-zoom">
+                      <a href="#"><img class="w-100" src="../IMG/img21.png" alt=""></a>
+                    </div>
+                    <h6 style="opacity: 0.5; padding-left: 1rem; padding-top: 1rem;">01/11/2023</h6>
+                    <a href="#" class="text-decoration-none text-dark">
+                      <h5 class="fw-bold" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-left: 1rem; padding-top: 0.5rem;">
+                        LY CÀ PHÊ SỮA ĐÁ VIỆT NAM XUẤT HIỆN Ở QUẢNG TRƯỜNG THỜI ĐẠI NEW YORK
+                      </h5> 
+                    </a>
+                    <p style="padding-left: 1rem;">Ấn tượng và tự hào, hình ảnh Việt Nam tiếp tục được lên sóng tại Quảng trường Thời Đại (New York) với ly cà phê sữa đá quen thuộc, đi....</p>
+                </div>
+                <!-- col-4 -->                                             
+                </div>
+                <!-- row -->
+            </div>
+            <!-- content about2 -->
         </div>
     </div>
-    <!--  -->
+    <!-- end main -->
+     <!-- footer -->
+      <div id="footer" class="" style="background-color: #262626;">
+        <div class="container text-white ">
+          <div class="row">
+              <div class="col-3 mt-5">
+                  <h5>Giới thiệu</h5>
+                  <a href=""><p>Về chúng tôi</p></a>
+                  <a href=""><p>Khuyến mãi</p></a>
+                  <a href=""><p>Chuyện cà phê</p></a>
+                  <a href=""><p>Cửa hàng</p></a>
+                  <a href=""><p>Tuyển dụng</p></a>
+              </div>
+              <div class="col-3 mt-5">
+                  <h5>Điều khoản</h5>
+                  <a href=""><p>Điều khoản sử dụng</p></a>
+                  <a href=""><p>Chính sách bảo mật thông tin</p></a>
+                  <a href=""><p>Hướng dẫn xuất hóa đơn GTGT</p></a>
+              </div>
+              <div class="col-3 mt-5">
+                  <h5><i class="bi bi-telephone"> </i> Đặt hàng: 1800 6936</h5>
+                  <h5><i class="bi bi-geo-alt"></i> Địa chỉ</h5>
+                  <p>Tầng 7, TRUNG TÂM THƯƠNG MẠI GIGAMALL, 240 - 242 Phạm Văn Đồng, P. Hiệp Bình Chánh, TP. Thủ Đức, TP.HCM  </p>
+              </div>
+              <div class="col-3">                 
+                  <div class="page mt-5" style="height: 10rem; width: 100%;">
+                    <div class="row">
+                        <div class="col-3 mt-3 ms-3">
+                            <a href=""><img class="w-100" src="../IMG/favicon.png" alt=""></a>
+                        </div>
+                        <div class="col-8 mt-5">
+                            <a href=""><h6>The Coffee House</h6></a>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+      </div>
+      </div>
+     <!-- js -->
     <script src="../JS/home.js"></script>
 </body>
 </html>

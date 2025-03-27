@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/menu.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../IMG/favicon.png">
+  <!-- slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  
+  <title>Tất cả sản phẩm</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="container-fluid bg-color">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="../IMG/thecoffeehouse-logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link active" href="#">Cửa hàng</a></li>           
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Menu</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Cà phê</a></li>
+                  <li><a class="dropdown-item" href="#">Trà</a></li>
+                  <li><a class="dropdown-item" href="#">Soda</a></li>
+                  <li><hr class="dropdown-divider"/></li>
+                  <li><a class="dropdown-item" href="#">Xem thêm</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Tuyển dụng</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Hotline</a></li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Tìm kiếm">
+              <button class="btn btn-outline-success" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>            
+          </div> 
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tài khoản</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../HMTL/cart.html">Đơn mua</a></li>
+                <li><a class="dropdown-item" href="#">Thông tin tài khoản</a></li> 
+                <li><a class="dropdown-item" href="../HMTL/Login.html">Đăng nhập</a></li>               
+              </ul>
+            </li>
+          </ul>   
+        </div>
+      </nav>
+    </div>
+    <!-- main -->
+        <div id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <ul>
+                            <li><a href="../HMTL/menu.html">Tất cả</a></li>
+                            <li onclick="toggleMenu(this)">Cà phê
+                                <ul class="submenu">
+                                    <li onclick="scrollToProduct('sp1')">Cà Phê Highlight</li>
+                                    <li onclick="scrollToProduct('sp2')">Cà Phê Việt Nam</li>
+                                    <li onclick="scrollToProduct('sp3')">Cà Phê Máy</li>
+                                    <li onclick="scrollToProduct('sp4')">Cold Brew</li>
+                                </ul>
+                            </li>
+                            <li onclick="toggleMenu(this)">A Mê
+                                <ul class="submenu">
+                                    <li onclick="scrollToProduct('sp5')">A Mê</li>                                    
+                                </ul>
+                            </li>
+                            <li onclick="toggleMenu(this)">Trái Cây Xay 0°C
+                                <ul class="submenu">
+                                    <li onclick="scrollToProduct('sp6')">Trái Cây Xay 0°C</li>                                       
+                                </ul>
+                            </li>
+                            <li onclick="toggleMenu(this)">Trà Trái Cây - HiTea
+                                <ul class="submenu">
+                                    <li onclick="scrollToProduct('sp7')">Trà Trái Cây</li>
+                                    <li onclick="scrollToProduct('sp7')">Hi-Tea</li>
+                                </ul>
+                            </li>
+                            <li onclick="toggleMenu(this)">Trà Sữa
+                                <ul class="submenu">
+                                    <li onclick="scrollToProduct('sp8')">Trà Sữa</li>
+                                </ul>
+                            </li>
+                            <li onclick="toggleMenu(this)">Trà Xanh - Chocolate
+                                <ul class="submenu">
+                                    <li onclick="scrollToProduct('sp9')">Trà Xanh Tây Bắc</li>
+                                    <li onclick="scrollToProduct('sp10')">Chocolate</li>
+                                </ul>
+                            </li>
+                            <li onclick="toggleMenu(this)">Thức Uống Đá Xay
+                                <ul class="submenu">
+                                    <li onclick="scrollToProduct('sp11')">Đá Xay Frosty</li>
+                                </ul>
+                            </li>
+                            <li onclick="toggleMenu(this)">Bánh & Snack
+                                <ul class="submenu">
+                                    <li onclick="scrollToProduct('sp12')">Bánh Mặn</li>
+                                    <li onclick="scrollToProduct('sp13')">Bánh Ngọt</li>
+                                    <li onclick="scrollToProduct('sp14')">Bánh Pastry</li>
+                                </ul>
+                            </li>
+                            <li onclick="toggleMenu(this)">Thướng Thức Tại Nhà
+                                <ul class="submenu">
+                                    <li onclick="scrollToProduct('sp15')">Cà Phê Tại Nhà</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end col-4 -->
+                     <div class="col-8">
+                        <div class="row mt-3">
+                            <h4>Cà Phê Highlight</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div id="sp1" class="row mt-3">
+                            <h4>Cà Phê Highlight</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div id="sp1" class="row mt-3">
+                            <h4>Cà Phê Highlight</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div id="sp1" class="row mt-3">
+                            <h4>Cà Phê Highlight</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div id="sp1" class="row mt-3">
+                            <h4>Cà Phê Highlight</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div id="sp1" class="row mt-3">
+                            <h4>Cà Phê Highlight</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div id="sp1" class="row mt-3">
+                            <h4>Cà Phê Highlight</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div id="sp1" class="row mt-3">
+                            <h4>Cà Phê Highlight</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div id="sp1" class="row mt-3">
+                            <h4>Cà Phê Highlight</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div id="sp1" class="row mt-3">
+                            <h4>Cà Phê Highlight</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div id="sp1" class="row mt-3">
+                            <h4>Cà Phê Highlight</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div id="sp1" class="row mt-3">
+                            <h4>Cà Phê Highlight</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div id="sp1" class="row mt-3">
+                            <h4>Cà Phê Highlight</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div id="sp1" class="row mt-3">
+                            <h4>Cà Phê Highlight</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div id="sp1" class="row mt-3">
+                            <h4>Cà Phê Highlight</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div id="sp15" class="row mt-3">
+                            <h4>Cà Phê Tại Nhà</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                     </div>
+                     <!-- end col-8 -->
+                </div>
+            </div>
+        </div>
+    <!-- end main -->
+     <!-- footer -->
+      <div id="footer" class="mt-5" style="background-color: #262626;">
+        <div class="container text-white ">
+          <div class="row">
+              <div class="col-3 mt-5">
+                  <h5>Giới thiệu</h5>
+                  <a href=""><p>Về chúng tôi</p></a>
+                  <a href=""><p>Khuyến mãi</p></a>
+                  <a href=""><p>Chuyện cà phê</p></a>
+                  <a href=""><p>Cửa hàng</p></a>
+                  <a href=""><p>Tuyển dụng</p></a>
+              </div>
+              <div class="col-3 mt-5">
+                  <h5>Điều khoản</h5>
+                  <a href=""><p>Điều khoản sử dụng</p></a>
+                  <a href=""><p>Chính sách bảo mật thông tin</p></a>
+                  <a href=""><p>Hướng dẫn xuất hóa đơn GTGT</p></a>
+              </div>
+              <div class="col-3 mt-5">
+                  <h5><i class="bi bi-telephone"> </i> Đặt hàng: 1800 6936</h5>
+                  <h5><i class="bi bi-geo-alt"></i> Địa chỉ</h5>
+                  <p>Tầng 7, TRUNG TÂM THƯƠNG MẠI GIGAMALL, 240 - 242 Phạm Văn Đồng, P. Hiệp Bình Chánh, TP. Thủ Đức, TP.HCM  </p>
+              </div>
+              <div class="col-3">                 
+                  <div class="page mt-5" style="height: 10rem; width: 100%;">
+                    <div class="row">
+                        <div class="col-3 mt-3 ms-3">
+                            <a href=""><img class="w-100" src="../IMG/favicon.png" alt=""></a>
+                        </div>
+                        <div class="col-8 mt-5">
+                            <a href=""><h6>The Coffee House</h6></a>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+      </div>
+      </div>
+     <!-- js -->
+    <script src="../JS/menu.js"></script>
+</body>
+</html>

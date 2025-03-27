@@ -13,7 +13,7 @@ function hienThiSanPham() {
                 <div class="card">
                     <img src="${sanPham.hinhAnh}" class="card-img-top" alt="${sanPham.ten}">
                     <div class="card-body text-center">
-                        <h5 class="card-title">${sanPham.ten}</h5>
+                        <h6 class="card-title">${sanPham.ten}</h6>
                         <p class="card-text">${sanPham.gia} đ</p>
                         <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="${viTri}" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>
                     </div>
@@ -30,6 +30,7 @@ function hienThiSanPham() {
             document.getElementById('tieuDeModal').textContent = `Đặt hàng - ${sanPham.ten}`;
             document.getElementById('hinhAnhSanPham').src = sanPham.hinhAnh;
             document.getElementById('tenSanPham').textContent = sanPham.ten;
+            document.getElementById('giaSanPham').textContent = sanPham.gia;
         });
     });
     // 
@@ -53,12 +54,35 @@ function hienThiSanPham() {
 // 
 document.getElementById('xacNhanDatHang').addEventListener('click', function () {
     const size = document.getElementById('chonSize').value;
-    const soLuong = document.getElementById('chonSoLuong').value;
-    alert(`Bạn đã đặt ${soLuong} sản phẩm size ${size}!`);
+    const soLuong = parseInt(document.getElementById('chonSoLuong').value, 10);
+    const tenSanPham = document.getElementById('tenSanPham').textContent;
+    const giaSanPham = parseFloat(document.getElementById('giaSanPham').textContent.replace(/\D/g, ''));
+    const hinhAnhSanPham = document.getElementById('hinhAnhSanPham').src;
 
-    let modalElement = document.getElementById('modalDatHang');
-    let modal = bootstrap.Modal.getInstance(modalElement);
-    if (modal) {
-        modal.hide();
+    if (soLuong <= 0 || isNaN(soLuong)) {
+        alert("Vui lòng chọn số lượng hợp lệ!");
+        return;
     }
+
+    // 
+    const sanPham = {
+        id: Date.now(),
+        name: tenSanPham,
+        size: size,
+        price: giaSanPham,
+        quantity: soLuong,
+        image: hinhAnhSanPham
+    };
+
+    // 
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    cartItems.push(sanPham);
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+    // 
+    alert(`Bạn đã đặt ${tenSanPham}.
+Sản phẩm size ${size}.
+Số lượng: ${soLuong}.
+Tổng cộng: ${(giaSanPham * soLuong).toLocaleString()} VND`);
 });
+

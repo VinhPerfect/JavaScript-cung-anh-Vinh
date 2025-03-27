@@ -68,7 +68,7 @@ function hienThiSanPham() {
             <td>${sanPham.ten}</td>
             <td>${sanPham.gia}đ</td>
             <td>
-                <button class="btn btn-warning btn-sm" onclick="chinhSuaSanPham(${sanPham.id})">Chỉnh sửa</button>
+                <button class="btn btn-warning btn-sm text-white" onclick="chinhSuaSanPham(${sanPham.id})">Chỉnh sửa</button>
                 <button class="btn btn-danger btn-sm" onclick="xoaSanPham(${sanPham.id})">Xóa</button>
             </td>
         `;
