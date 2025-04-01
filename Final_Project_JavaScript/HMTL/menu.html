@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../CSS/menu.css">
+  <link rel="stylesheet" href="../CSS/home.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -66,9 +67,9 @@
     </div>
     <!-- main -->
         <div id="main">
-            <div class="container">
+            <div class="container">              
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4 table-menu" style="border-right: 1px solid #ccc;">
                         <ul>
                             <li><a href="../HMTL/menu.html">Tất cả</a></li>
                             <li onclick="toggleMenu(this)">Cà phê
@@ -92,248 +93,999 @@
                             <li onclick="toggleMenu(this)">Trà Trái Cây - HiTea
                                 <ul class="submenu">
                                     <li onclick="scrollToProduct('sp7')">Trà Trái Cây</li>
-                                    <li onclick="scrollToProduct('sp7')">Hi-Tea</li>
+                                    <li onclick="scrollToProduct('sp8')">Hi-Tea</li>
                                 </ul>
                             </li>
                             <li onclick="toggleMenu(this)">Trà Sữa
                                 <ul class="submenu">
-                                    <li onclick="scrollToProduct('sp8')">Trà Sữa</li>
+                                    <li onclick="scrollToProduct('sp9')">Trà Sữa</li>
                                 </ul>
                             </li>
                             <li onclick="toggleMenu(this)">Trà Xanh - Chocolate
                                 <ul class="submenu">
-                                    <li onclick="scrollToProduct('sp9')">Trà Xanh Tây Bắc</li>
-                                    <li onclick="scrollToProduct('sp10')">Chocolate</li>
+                                    <li onclick="scrollToProduct('sp10')">Trà Xanh Tây Bắc</li>
+                                    <li onclick="scrollToProduct('sp11')">Chocolate</li>
                                 </ul>
                             </li>
                             <li onclick="toggleMenu(this)">Thức Uống Đá Xay
                                 <ul class="submenu">
-                                    <li onclick="scrollToProduct('sp11')">Đá Xay Frosty</li>
+                                    <li onclick="scrollToProduct('sp12')">Đá Xay Frosty</li>
                                 </ul>
                             </li>
                             <li onclick="toggleMenu(this)">Bánh & Snack
                                 <ul class="submenu">
-                                    <li onclick="scrollToProduct('sp12')">Bánh Mặn</li>
-                                    <li onclick="scrollToProduct('sp13')">Bánh Ngọt</li>
-                                    <li onclick="scrollToProduct('sp14')">Bánh Pastry</li>
+                                    <li onclick="scrollToProduct('sp13')">Bánh Mặn</li>
+                                    <li onclick="scrollToProduct('sp14')">Bánh Ngọt</li>
+                                    <li onclick="scrollToProduct('sp15')">Bánh Pastry</li>
                                 </ul>
                             </li>
                             <li onclick="toggleMenu(this)">Thướng Thức Tại Nhà
                                 <ul class="submenu">
-                                    <li onclick="scrollToProduct('sp15')">Cà Phê Tại Nhà</li>
+                                    <li onclick="scrollToProduct('sp16')">Cà Phê Tại Nhà</li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                     <!-- end col-4 -->
                      <div class="col-8">
+                        <div id="sp1" class="row mt-3">
+                            <h4>Cà Phê Highlight</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="../IMG/menu/img1.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h6 class="card-title">Trà Xanh Espresso Marble</h6>
+                                      <p>45.000đ</p>
+                                      <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--end 1  -->
+                        <div id="sp2" class="row mt-3">
+                            <h4>Cà Phê Việt Nam</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="../IMG/menu/img2.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h6 class="card-title">Bơ Arabica</h6>
+                                      <p>49.000đ</p>
+                                      <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-4 mt-3">
+                              <div class="card" style="width: 100%;">
+                                  <img src="../IMG/menu/img3.png" class="card-img-top" alt="">
+                                  <div class="card-body">
+                                    <h6 class="card-title">Đường Đen Sữa Đá</h6>
+                                    <p>45.000đ</p>
+                                    <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img3-1.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h6 class="card-title">The Coffee House Sữa Đá</h6>
+                                  <p>39.000đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                          
+                        </div>
+                        </div>
+                        <!-- row -->
+                         <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img4.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Bạc Xỉu</h5>
+                                  <p>29.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img5.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Bạc Xỉu Nóng</h5>
+                                  <p>39.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img6.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Cà Phê Đen Nóng</h5>
+                                  <p>39.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                         </div>
+                         <!-- end row -->
+                         <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img7.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Cà Phê Sữa Nóng</h5>
+                                  <p>39.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img8.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Cà Phê Đen Đá</h5>
+                                  <p>39.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img9.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Cà Phê Đen Đá</h5>
+                                  <p>29.000</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                         </div>
+                         <!-- end row -->
+                         <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img10.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Bạc Xỉu Lắc Sữa Yến Mạch</h5>
+                                  <p>45.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                         <!-- end row -->
+                        <div id="sp3" class="row mt-3">
+                            <h4>Cà Phê Máy</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="../IMG/menu/img11.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">A-Mê Classic</h5>
+                                      <p>39.000 đ</p>
+                                      <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-4 mt-3">
+                              <div class="card" style="width: 100%;">
+                                  <img src="../IMG/menu/img12.png" class="card-img-top" alt="">
+                                  <div class="card-body">
+                                    <h5 class="card-title">A-Mê Đào</h5>
+                                    <p>55.000 đ</p>
+                                    <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img13.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">A-Mê Mơ</h5>
+                                  <p>55.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>
+                        </div>                        
+                        </div>
+                        <!-- end row -->
                         <div class="row mt-3">
-                            <h4>Cà Phê Highlight</h4>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img14.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">A-Mê Quất</h5>
+                                  <p>55.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img15.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">A-Mê Tuyết Đào</h5>
+                                  <p>65.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img16.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">A-Mê Tuyết Mơ</h5>
+                                  <p>65.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                         </div>
+                         <!-- end row -->
+                         <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img17.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">A-Mê Tuyết Quất</h5>
+                                  <p>65.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img18.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Americano Nóng</h5>
+                                  <p>49.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img19.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Cappuccino Nóng</h5>
+                                  <p>55.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                         </div>
+                         <!--  -->
+                         <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img20.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Cappuccino Đá</h5>
+                                  <p>55.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img21.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Caramel Macchiato Nóng</h5>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img22.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Caramel Macchiato Đá</h5>
+                                  <p>55.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                         </div>
+                         <!--  -->
+                         <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img23.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Espresso Nóng</h5>
+                                  <p>45.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img24.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Espresso Đá</h5>
+                                  <p>49.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
+                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img25.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Latte Nóng</h5>
+                                  <p>55.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                         </div>
+                         <!--  -->
+                         <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img26.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Latte Đá</h5>
+                                  <p>55.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                          
+                          </div>  
+                         </div>
+                         <!--  -->
+                        <div id="sp4" class="row mt-3">
+                            <h4>Cold Brew</h4>
                             <div class="col-4 mt-3">
                                 <div class="card" style="width: 100%;">
-                                    <img src="" class="card-img-top" alt="">
+                                    <img src="../IMG/menu/img27.png" class="card-img-top" alt="">
                                     <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
-                                    </div>
+                                      <h5 class="card-title">Cold Brew Truyền Thống</h5>
+                                      <p>45.000đ</p>
+                                      <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                    </div>
                                   </div>
-                            </div>
+                            </div>          
+                            <div class="col-4 mt-3">
+                              <div class="card" style="width: 100%;">
+                                  <img src="../IMG/menu/img28.png" class="card-img-top" alt="">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Cold Brew Kim Quất</h5>
+                                    <p>49.000 đ</p>
+                                    <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                  </div>
+                                </div>
+                          </div>  
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img29.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h6 class="card-title">Cold Brew Sữa Tươi</h6>
+                                  <p>49.000đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>
+                        </div>                    
                         </div>
                         <!--  -->
-                        <div id="sp1" class="row mt-3">
-                            <h4>Cà Phê Highlight</h4>
+                        <div id="sp5" class="row mt-3">
+                            <h4>A Mê</h4>
                             <div class="col-4 mt-3">
                                 <div class="card" style="width: 100%;">
-                                    <img src="" class="card-img-top" alt="">
+                                    <img src="../IMG/menu/img11.png" class="card-img-top" alt="">
                                     <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
-                                    </div>
+                                      <h5 class="card-title">A-Mê Classic</h5>
+                                      <p>39.000đ</p>
+                                      <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                    </div>
                                   </div>
                             </div>
+                            <div class="col-4 mt-3">
+                              <div class="card" style="width: 100%;">
+                                  <img src="../IMG/menu/img12.png" class="card-img-top" alt="">
+                                  <div class="card-body">
+                                    <h5 class="card-title">A-Mê Đào</h5>
+                                    <p>55.000 đ</p>
+                                    <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img13.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">A-Mê Mơ</h5>
+                                  <p>55.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>
+                        </div>
+                        </div>
+                        <!-- end row -->
+                        <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img14.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">A-Mê Quất</h5>
+                                  <p>55.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img15.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">A-Mê Tuyết Đào</h5>
+                                  <p>65.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img16.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">A-Mê Tuyết Mơ</h5>
+                                  <p>65.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                         </div>
+                         <!--  -->
+                         <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img17.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">A-Mê Tuyết Quất</h5>
+                                  <p>65.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                         </div>
+                         <!--  -->
+                        <div id="sp6" class="row mt-3">
+                            <h4>Trái Cây Xay 0°C</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="../IMG/menu/img30.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Bơ Sữa Phô Mai</h5>
+                                      <p>55.000 đ</p>
+                                      <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-4 mt-3">
+                              <div class="card" style="width: 100%;">
+                                  <img src="../IMG/menu/img31.png" class="card-img-top" alt="">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Dâu Phô Mai</h5>
+                                    <p>55.000 đ</p>
+                                    <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                  </div>
+                                </div>
+                          </div>
                         </div>
                         <!--  -->
-                        <div id="sp1" class="row mt-3">
-                            <h4>Cà Phê Highlight</h4>
+                        <div id="sp7" class="row mt-3">
+                            <h4>Trà Trái Cây</h4>
                             <div class="col-4 mt-3">
                                 <div class="card" style="width: 100%;">
-                                    <img src="" class="card-img-top" alt="">
+                                    <img src="../IMG/menu/img32.png" class="card-img-top" alt="">
                                     <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
-                                    </div>
+                                      <h6 class="card-title">Oolong Tứ Quý Sen (Nóng)</h6>
+                                      <p>59.000 đ</p>
+                                      <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                    </div>
                                   </div>
                             </div>
+                            <div class="col-4 mt-3">
+                              <div class="card" style="width: 100%;">
+                                  <img src="../IMG/menu/img33.png" class="card-img-top" alt="">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Oolong Tứ Quý Sen</h5>
+                                    <p>49.000 đ</p>
+                                    <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img34.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Oolong Tứ Quý Dâu Trân Châu</h5>
+                                  <p>49.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>
+                        </div>
                         </div>
                         <!--  -->
-                        <div id="sp1" class="row mt-3">
-                            <h4>Cà Phê Highlight</h4>
+                        <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img35.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h6 class="card-title">Oolong Tứ Quý Kim Quất Trân Châu</h6>
+                                  <p>49.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img36.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Oolong Tứ Quý Vải</h5>
+                                  <p>49.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                         </div>
+                         <!--  -->
+                        <div id="sp8" class="row mt-3">
+                            <h4>Hi Tea</h4>
                             <div class="col-4 mt-3">
                                 <div class="card" style="width: 100%;">
-                                    <img src="" class="card-img-top" alt="">
+                                    <img src="../IMG/menu/img37.png" class="card-img-top" alt="">
                                     <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
-                                    </div>
+                                      <h5 class="card-title">Hi-Tea Đào Kombucha</h5>
+                                      <p>59.000 đ</p>
+                                      <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                    </div>
                                   </div>
                             </div>
+                            <div class="col-4 mt-3">
+                              <div class="card" style="width: 100%;">
+                                  <img src="../IMG/menu/img38.png" class="card-img-top" alt="">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Hi-Tea Yuzu Kombucha</h5>
+                                    <p>59.000 đ</p>
+                                    <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img39.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Hi-Tea Yuzu Trân Châu</h5>
+                                  <p>49.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>
+                        </div>
                         </div>
                         <!--  -->
-                        <div id="sp1" class="row mt-3">
-                            <h4>Cà Phê Highlight</h4>
+                        <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img40.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Hi-Tea Vải</h5>
+                                  <p>49.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img41.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Hi-Tea Đào</h5>
+                                  <p>49.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                         </div>
+                         <!--  -->
+                        <div id="sp9" class="row mt-3">
+                            <h4>Trà Sữa</h4>
                             <div class="col-4 mt-3">
                                 <div class="card" style="width: 100%;">
-                                    <img src="" class="card-img-top" alt="">
+                                    <img src="../IMG/menu/img42.png" class="card-img-top" alt="">
                                     <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
-                                    </div>
+                                      <h5 class="card-title">Trà Sữa Oolong Nướng Sương Sáo</h5>
+                                      <p>55.000 đ</p>
+                                      <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                    </div>
                                   </div>
                             </div>
+                            <div class="col-4 mt-3">
+                              <div class="card" style="width: 100%;">
+                                  <img src="../IMG/menu/img43.png" class="card-img-top" alt="">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Trà Sữa Oolong Tứ Quý Bơ</h5>
+                                    <p>59.000 đ</p>
+                                    <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img44.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Trà Sữa Oolong Tứ Quý Sương Sáo</h5>
+                                  <p>55.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>
+                        </div>
                         </div>
                         <!--  -->
-                        <div id="sp1" class="row mt-3">
-                            <h4>Cà Phê Highlight</h4>
+                        <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img45.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Hồng Trà Sữa Nóng</h5>
+                                  <p>55.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img46.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Hồng Trà Sữa Trân Châu</h5>
+                                  <p>55.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img47.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Trà Đen Macchiato</h5>
+                                  <p>55.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                         </div>
+                         <!--  -->
+                         <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img48.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Trà Sữa Oolong BLao</h5>
+                                  <p>39.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                         </div>
+                         <!--  -->
+                        <div id="sp10" class="row mt-3">
+                            <h4>Trà Xanh Tây Bắc</h4>
                             <div class="col-4 mt-3">
                                 <div class="card" style="width: 100%;">
-                                    <img src="" class="card-img-top" alt="">
+                                    <img src="../IMG/menu/img49.png" class="card-img-top" alt="">
                                     <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
-                                    </div>
+                                      <h5 class="card-title">Trà Xanh Latte (Nóng)</h5>
+                                      <p>49.000 đ</p>
+                                      <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                    </div>
                                   </div>
                             </div>
+                            <div class="col-4 mt-3">
+                              <div class="card" style="width: 100%;">
+                                  <img src="../IMG/menu/img50.png" class="card-img-top" alt="">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Trà Xanh Đường Đen</h5>
+                                    <p>55.000 đ</p>
+                                    <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img51.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Trà Xanh Espresso Marble</h5>
+                                  <p>49.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>
+                        </div>  
                         </div>
                         <!--  -->
-                        <div id="sp1" class="row mt-3">
-                            <h4>Cà Phê Highlight</h4>
+                        <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img52.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Trà Xanh Latte Sữa Yến Mạch</h5>
+                                  <p>55.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img53.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Trà Xanh Latte Đậm Vị</h5>
+                                  <p>49.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img54.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Trà Xanh Latte</h5>
+                                  <p>45.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                         </div>
+                         <!--  -->
+                         <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img55.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Trà Xanh Latte Sữa Yến Mạch (Nóng)</h5>
+                                  <p>55.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          </div>
+                          <!--  -->
+                        <div id="sp11" class="row mt-3">
+                            <h4>Chocolate</h4>
                             <div class="col-4 mt-3">
                                 <div class="card" style="width: 100%;">
-                                    <img src="" class="card-img-top" alt="">
+                                    <img src="../IMG/menu/img56.png" class="card-img-top" alt="">
                                     <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
-                                    </div>
+                                      <h5 class="card-title">Chocolate Đá</h5>
+                                      <p>55.000 đ</p>
+                                      <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                    </div>
                                   </div>
                             </div>
+                            <div class="col-4 mt-3">
+                              <div class="card" style="width: 100%;">
+                                  <img src="../IMG/menu/img57.png" class="card-img-top" alt="">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Chocolate Nóng</h5>
+                                    <p>55.000 đ</p>
+                                    <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                  </div>
+                                </div>
+                          </div>
                         </div>
                         <!--  -->
-                        <div id="sp1" class="row mt-3">
-                            <h4>Cà Phê Highlight</h4>
+                        <div id="sp12" class="row mt-3">
+                            <h4>Đá xay Frosty</h4>
                             <div class="col-4 mt-3">
                                 <div class="card" style="width: 100%;">
-                                    <img src="" class="card-img-top" alt="">
+                                    <img src="../IMG/menu/img58.png" class="card-img-top" alt="">
                                     <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
-                                    </div>
+                                      <h5 class="card-title">Frosty Bánh Kem Dâu</h5>
+                                      <p>59.000 đ</p>
+                                      <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                    </div>
                                   </div>
                             </div>
+                            <div class="col-4 mt-3">
+                              <div class="card" style="width: 100%;">
+                                  <img src="../IMG/menu/img59.png" class="card-img-top" alt="">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Frosty Choco Chip</h5>
+                                    <p>59.000 đ</p>
+                                    <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img60.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Frosty Trà Xanh</h5>
+                                  <p>59.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>
+                        </div>
                         </div>
                         <!--  -->
-                        <div id="sp1" class="row mt-3">
-                            <h4>Cà Phê Highlight</h4>
+                        <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img61.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Frosty Cà Phê Đường Đen</h5>
+                                  <p>59.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img62.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Frosty Caramel Arabica</h5>
+                                  <p>59.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img63.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Frosty Phin-Gato</h5>
+                                  <p>55.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          </div>
+                          <!--  -->
+                        <div id="sp13" class="row mt-3">
+                            <h4>Bánh Mặn</h4>
                             <div class="col-4 mt-3">
                                 <div class="card" style="width: 100%;">
-                                    <img src="" class="card-img-top" alt="">
+                                    <img src="../IMG/menu/img64.png" class="card-img-top" alt="">
                                     <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
-                                    </div>
+                                      <h5 class="card-title">CBánh Mì Que Chà Bông Phô Mai Bơ Cay</h5>
+                                      <p>22.000 đ</p>
+                                      <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                    </div>
                                   </div>
                             </div>
+                            <div class="col-4 mt-3">
+                              <div class="card" style="width: 100%;">
+                                  <img src="../IMG/menu/img65.png" class="card-img-top" alt="">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Bánh Mì Que Bò Nấm Xốt Bơ</h5>
+                                    <p>22.000 đ</p>
+                                    <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img66.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Bánh Mì Que Pate Cột Đèn</h5>
+                                  <p>19.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>
+                        </div>
                         </div>
                         <!--  -->
-                        <div id="sp1" class="row mt-3">
-                            <h4>Cà Phê Highlight</h4>
+                        <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img67.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Croissant trứng muối</h5>
+                                  <p>39.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img68.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Butter Croissant Sữa Đặc</h5>
+                                  <p>35.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img69.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Chà Bông Phô Mai</h5>
+                                  <p>39.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          </div>
+                        <!--  -->
+                        <div id="sp14" class="row mt-3">
+                            <h4>Bánh Ngọt</h4>
                             <div class="col-4 mt-3">
                                 <div class="card" style="width: 100%;">
-                                    <img src="" class="card-img-top" alt="">
+                                    <img src="../IMG/menu/img70.png" class="card-img-top" alt="">
                                     <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
+                                      <h5 class="card-title">Mít Sấy</h5>
+                                      <p>20.000 đ</p>
                                       <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
                                     </div>
                                   </div>
                             </div>
+                            <div class="col-4 mt-3">
+                              <div class="card" style="width: 100%;">
+                                  <img src="../IMG/menu/img71.png" class="card-img-top" alt="">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Mochi Kem Trà Sữa Trân Châu</h5>
+                                    <p>19.000 đ</p>
+                                    <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img72.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Mochi Kem Phúc Bồn Tử</h5>
+                                  <p>19.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>
+                        </div>
                         </div>
                         <!--  -->
-                        <div id="sp1" class="row mt-3">
-                            <h4>Cà Phê Highlight</h4>
-                            <div class="col-4 mt-3">
-                                <div class="card" style="width: 100%;">
-                                    <img src="" class="card-img-top" alt="">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
+                        <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img73.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Mochi Kem Việt Quất</h5>
+                                  <p>19.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img74.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Mochi Kem Chocolate</h5>
+                                  <p>19.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img75.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Mochi Kem Matcha</h5>
+                                  <p>19.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          </div>
                         <!--  -->
-                        <div id="sp1" class="row mt-3">
-                            <h4>Cà Phê Highlight</h4>
-                            <div class="col-4 mt-3">
-                                <div class="card" style="width: 100%;">
-                                    <img src="" class="card-img-top" alt="">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div id="sp1" class="row mt-3">
-                            <h4>Cà Phê Highlight</h4>
-                            <div class="col-4 mt-3">
-                                <div class="card" style="width: 100%;">
-                                    <img src="" class="card-img-top" alt="">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div id="sp1" class="row mt-3">
-                            <h4>Cà Phê Highlight</h4>
-                            <div class="col-4 mt-3">
-                                <div class="card" style="width: 100%;">
-                                    <img src="" class="card-img-top" alt="">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div id="sp1" class="row mt-3">
-                            <h4>Cà Phê Highlight</h4>
-                            <div class="col-4 mt-3">
-                                <div class="card" style="width: 100%;">
-                                    <img src="" class="card-img-top" alt="">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
+                        <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img76.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Mousse Tiramisu</h5>
+                                  <p>19.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img77.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Mousse Gấu Chocolate</h5>
+                                  <p>35.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          </div>
                         <!--  -->
                         <div id="sp15" class="row mt-3">
+                            <h4>Bánh Pastry</h4>
+                            <div class="col-4 mt-3">
+                                <div class="card" style="width: 100%;">
+                                    <img src="../IMG/menu/img78.png" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Butter Croissant</h5>
+                                      <p>29.000 đ</p>
+                                      <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-4 mt-3">
+                              <div class="card" style="width: 100%;">
+                                  <img src="../IMG/menu/img79.png" class="card-img-top" alt="">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Choco Croffle</h5>
+                                    <p>39.000 đ</p>
+                                    <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img80.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Pate Chaud</h5>
+                                  <p>39.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>
+                        </div>
+                        </div>
+                        <!--  -->
+                        <div id="sp16" class="row mt-3">
                             <h4>Cà Phê Tại Nhà</h4>
                             <div class="col-4 mt-3">
                                 <div class="card" style="width: 100%;">
-                                    <img src="" class="card-img-top" alt="">
+                                    <img src="../IMG/menu/img81.png" class="card-img-top" alt="">
                                     <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <a href="#" class="btn btn-warning text-white">Đặt hàng</a>
-                                    </div>
+                                      <h5 class="card-title">Cà Phê Đen Đá Hộp (14 gói x 16g)</h5>
+                                      <p>66.000 đ</p>
+                                      <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                    </div>
                                   </div>
                             </div>
+                            <div class="col-4 mt-3">
+                              <div class="card" style="width: 100%;">
+                                  <img src="../IMG/menu/img82.png" class="card-img-top" alt="">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Cà Phê Sữa Đá Hòa Tan Túi 25x22G</h5>
+                                    <p>127.000 đ</p>
+                                    <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img83.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Cà Phê Sữa Đá Hòa Tan (10 gói x 22g)</h5>
+                                  <p>53.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>
                         </div>
+                        </div>
+                        <!--  -->
+                        <div class="row mt-3">
+                          <div class="col-4 mt-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="../IMG/menu/img84.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title">Cà Phê Rang Xay Original 1 250G</h5>
+                                  <p>82.000 đ</p>
+                                  <a href="#" class="btn btn-warning text-white nutDatHang" data-vitri="0" data-bs-toggle="modal" data-bs-target="#modalDatHang">Đặt hàng</a>                                </div>
+                              </div>                                                      
+                          </div>
+                          </div>
+                          <!--  -->
                      </div>
                      <!-- end col-8 -->
                 </div>
@@ -379,6 +1131,48 @@
           </div>
       </div>
       </div>
+      <!--  -->
+      <div class="modal fade" id="modalDatHang" tabindex="-1" aria-labelledby="tieuDeModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="tieuDeModal">Đặt hàng</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+            </div>
+            <!--  -->
+            <div class="modal-body">
+              <div class="d-flex">
+                <img id="hinhAnhSanPham" src="" alt="Sản phẩm" class="img-thumbnail me-3" style="width: 100px; height: 100px;">
+                <div>
+                  <h5 id="tenSanPham">Tên sản phẩm</h5>
+                </div>
+              </div>
+              <form id="formDatHang">
+                <div class="mb-3">
+                  <label for="chonSize" class="form-label">Chọn Size</label>
+                  <select class="form-select" id="chonSize">
+                    <option value="M" selected>Size M</option>
+                    <option value="L">Size L</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="chonSoLuong" class="form-label">Số lượng</label>
+                  <input type="number" class="form-control" id="chonSoLuong" value="1" min="1">
+                </div>
+                <div class="">
+                  <h6 class="">Đơn giá: <span id="giaSanPham"></span> đ</h6>
+                </div>
+              </form>
+            </div>
+            <!--  -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">Hủy</button>
+              <button type="button" class="btn custom-btn btn-12 text-white" id="xacNhanDatHang"><span>Mua ngay</span><span>Xác nhận</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+            <!--  -->
      <!-- js -->
     <script src="../JS/menu.js"></script>
 </body>

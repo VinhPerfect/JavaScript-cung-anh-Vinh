@@ -42,7 +42,7 @@ function hienThiSanPham() {
   document.getElementById("tongTien").textContent = `Tổng tiền: ${tongTien.toLocaleString()} VND`;
 }
 
-// ✅ Cập nhật số lượng và size sản phẩm
+// 
 function capNhatSanPham(index) {
   let danhSachSanPham = JSON.parse(localStorage.getItem('cartItems')) || [];
   let quantityInput = document.getElementById(`quantity${index}`);
@@ -64,7 +64,7 @@ function capNhatSanPham(index) {
   hienThiSanPham();
 }
 
-// ✅ Cập nhật ghi chú
+// 
 function capNhatGhiChu(index) {
   let danhSachSanPham = JSON.parse(localStorage.getItem('cartItems')) || [];
   let ghiChuInput = document.getElementById(`ghiChu${index}`).value.trim();
@@ -74,7 +74,7 @@ function capNhatGhiChu(index) {
   localStorage.setItem('cartItems', JSON.stringify(danhSachSanPham));
 }
 
-// ✅ Xóa sản phẩm
+// 
 function xoaSanPham(index) {
   let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
   cartItems.splice(index, 1);  // ❌ Sửa lỗi delete ❌

@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     hienThiSanPham();
     hienThiTaiKhoan();
+    loadMenu();
 });
 
 function themSanPham() {
@@ -149,3 +150,81 @@ function hienThiTaiKhoan() {
         bangTaiKhoan.appendChild(tr);
     });
 }
+// menu
+// ✅ Thêm sản phẩm vào menu
+function themSanPhamVaoMenu() {
+    const tenSanPham = document.getElementById('tenSanPhamMenu').value.trim();
+    const giaSanPham = document.getElementById('giaSanPhamMenu').value.trim();
+    const hinhAnhSanPham = document.getElementById('hinhAnhSanPhamMenu').files[0];
+
+    if (!tenSanPham || !giaSanPham || !hinhAnhSanPham) {
+        alert('Vui lòng nhập đầy đủ thông tin sản phẩm');
+        return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = function (e) {
+        const hinhAnhURL = e.target.result;
+
+        const sanPham = {
+            id: Date.now(),
+            ten: tenSanPham,
+            gia: giaSanPham,
+            hinhAnh: hinhAnhURL
+        };
+
+        let danhSachSanPham = JSON.parse(localStorage.getItem('danhSachSanPham')) || [];
+        danhSachSanPham.push(sanPham);
+        localStorage.setItem('danhSachSanPham', JSON.stringify(danhSachSanPham));
+
+        hienThiMenu();
+        document.getElementById('tenSanPhamMenu').value = '';
+        document.getElementById('giaSanPhamMenu').value = '';
+        document.getElementById('hinhAnhSanPhamMenu').value = '';
+    };
+    reader.readAsDataURL(hinhAnhSanPham);
+}
+
+// ✅ Hiển thị menu
+function hienThiMenu() {
+    const danhSachSanPham = JSON.parse(localStorage.getItem('danhSachSanPham')) || [];
+    const bangMenu = document.getElementById('bangMenu');
+    bangMenu.innerHTML = '';
+
+    danhSachSanPham.forEach(sanPham => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td>${sanPham.id}</td>
+            <td><img src="${sanPham.hinhAnh}" alt="${sanPham.ten}" style="max-width: 100px;"></td>
+            <td>${sanPham.ten}</td>
+            <td>${sanPham.gia}đ</td>
+            <td>
+                <button class="btn btn-warning btn-sm text-white" onclick="chinhSuaSanPhamMenu(${sanPham.id})">Chỉnh sửa</button>
+                <button class="btn btn-danger btn-sm" onclick="xoaSanPhamMenu(${sanPham.id})">Xóa</button>
+            </td>
+        `;
+        bangMenu.appendChild(tr);
+    });
+}
+
+// ✅ Chỉnh sửa sản phẩm trong menu
+function chinhSuaSanPhamMenu(id) {
+    const danhSachSanPham = JSON.parse(localStorage.getItem('danhSachSanPham')) || [];
+    const sanPham = danhSachSanPham.find(sp => sp.id === id);
+
+    if (sanPham) {
+        document.getElementById('suaTenSanPhamMenu').value = sanPham.ten;
+        document.getElementById('suaGiaSanPhamMenu').value = sanPham.gia;
+        document.getElementById('xemTruocHinhAnhMenu').src = sanPham.hinhAnh;
+        document.getElementById('xemTruocHinhAnhMenu').style.display = 'block';
+
+        document.getElementById('luuChinhSuaMenu').onclick = function () {
+            luuChinhSuaMenu(id);
+        };
+
+        const suaModal = new bootstrap.Modal(document.getElementById('suaModalMenu'));
+        suaModal.show();
+    }
+}
+
+
