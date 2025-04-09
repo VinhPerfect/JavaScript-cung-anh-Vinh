@@ -151,7 +151,7 @@ function hienThiTaiKhoan() {
     });
 }
 // menu
-// ✅ Thêm sản phẩm vào menu
+// 
 function themSanPhamVaoMenu() {
     const tenSanPham = document.getElementById('tenSanPhamMenu').value.trim();
     const giaSanPham = document.getElementById('giaSanPhamMenu').value.trim();
@@ -185,7 +185,7 @@ function themSanPhamVaoMenu() {
     reader.readAsDataURL(hinhAnhSanPham);
 }
 
-// ✅ Hiển thị menu
+//
 function hienThiMenu() {
     const danhSachSanPham = JSON.parse(localStorage.getItem('danhSachSanPham')) || [];
     const bangMenu = document.getElementById('bangMenu');
@@ -206,8 +206,7 @@ function hienThiMenu() {
         bangMenu.appendChild(tr);
     });
 }
-
-// ✅ Chỉnh sửa sản phẩm trong menu
+// 
 function chinhSuaSanPhamMenu(id) {
     const danhSachSanPham = JSON.parse(localStorage.getItem('danhSachSanPham')) || [];
     const sanPham = danhSachSanPham.find(sp => sp.id === id);

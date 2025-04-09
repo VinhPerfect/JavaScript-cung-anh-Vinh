@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.filter-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.filter-menu li {
+  padding: 10px 15px;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.filter-menu li:hover {
+  background: #2980b9;
+}
+
+.product-list {
+  margin-top: 20px;
+}
+
+.product-item {
+  padding: 20px;
+  margin: 10px 0;
+  background: #f1c40f;
+  border-radius: 5px;
+  font-size: 18px;
+}
